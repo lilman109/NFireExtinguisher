@@ -5,7 +5,7 @@
       alt=""
       class="image"
     />
-    <h3 class="hea">{{ card.title }}</h3>
+    <h3 class="header">{{ card.title }}</h3>
     <p class="snippet">{{ card.snippet }}</p>
   </div>
 </template>
