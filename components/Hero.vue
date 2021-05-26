@@ -22,7 +22,6 @@ export default {};
 
 <style scoped>
 .Hero {
-  height: 50vh;
   position: relative;
   display: flex;
   padding: 5rem 0;
