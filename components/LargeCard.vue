@@ -36,6 +36,9 @@ export default {
   margin-top: 0.4rem;
   color: black;
 }
+a {
+  text-decoration: none;
+}
 .snippet {
   color: grey;
 }
