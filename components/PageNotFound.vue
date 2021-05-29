@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Page Not Found</h1>
     <img :src="require('@/assets/images/fe25.jpg')" alt="" />
   </div>
@@ -10,10 +10,10 @@ export default {};
 </script>
 
 <style scoped>
-div {
+.container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 50rem;
 }
 h1 {
