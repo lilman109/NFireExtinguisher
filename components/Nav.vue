@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <NuxtLink class="navbar-brand" to="/">Firengii</NuxtLink>
     <button
       class="navbar-toggler"
@@ -34,4 +34,4 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped></style>
