@@ -12,15 +12,27 @@
         </div>
         <vc-date-picker :value="null" color="indigo" is-dark is-range />
       </div>
-      <b-button id="show-btn" variant="outline-danger" @click="showModal"
-        >Rent</b-button
+      <b-button
+        id="show-btn"
+        variant="outline-danger"
+        @click="
+          () => {
+            addItem(product.id);
+            hideModal();
+          }
+        "
+        >Order</b-button
       >
     </b-modal>
   </div>
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
+  props: {
+    product: Object
+  },
   methods: {
     showModal() {
       this.$refs["my-modal"].show();
@@ -32,7 +44,8 @@ export default {
       // We pass the ID of the button that we want to return focus to
       // when the modal has hidden
       this.$refs["my-modal"].toggle("#toggle-btn");
-    }
+    },
+    ...mapMutations(["addItem"])
   }
 };
 </script>
